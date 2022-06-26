@@ -19,10 +19,13 @@ I gathered all less variables and hooks in UIkit.
 You have the following options to get UIkit:
 
 - Install with [npm](https://npmjs.com) to get all source files as they are available on Github: ```npm install uikit```
+or
 - Install with [yarn](https://yarnpkg.com/) to get all source files as they are available on Github: ```yarn add uikit```
-- Clone the repo to get all source files including build scripts: `git clone git://github.com/uikit/uikit.git`
-- Uikit-custom-theme is cloned into the UIkit. https://github.com/bariskrdrl/uikit-custom-theme.git
-- Change watch line package.json "watch": "watch-run -i -p \\"**/*.less\\" yarn node build/less",
+- Clone this repo under the uikit folder `git clone https://github.com/erkanaltinors/custom-uikit.git`
+- Extract custom folder under the uikit folder
+- Delete custom-uikit folder
+- Now you can follow steps at Compile section
+
 ---
 
 ## Examples Filex
