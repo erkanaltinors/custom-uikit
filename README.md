@@ -28,6 +28,7 @@ or
 - Clone this repo under the uikit folder `git clone https://github.com/erkanaltinors/custom-uikit.git`
 - Extract custom folder under the uikit folder
 - Delete custom-uikit folder
+- Change watch line package.json "watch": "watch-run -i -p \\"**/*.less\\" yarn node build/less",
 - Now you can follow steps at Compile section
 
 ---
