@@ -38,20 +38,30 @@
 @base-heading-color:                            @global-emphasis-color;
 @base-heading-text-transform:                   none;
 @base-heading-margin-top:                       @global-medium-margin;
-@base-h1-font-size-m:                           @global-2xlarge-font-size;
-@base-h1-font-size:                             @base-h1-font-size-m * 0.85;
-@base-h1-line-height:                           1.2;
-@base-h2-font-size-m:                           @global-xlarge-font-size;
-@base-h2-font-size:                             @base-h2-font-size-m * 0.85;
-@base-h2-line-height:                           1.3;
-@base-h3-font-size:                             @global-large-font-size;
-@base-h3-line-height:                           1.4;
-@base-h4-font-size:                             @global-medium-font-size;
-@base-h4-line-height:                           1.4;
-@base-h5-font-size:                             @global-font-size;
-@base-h5-line-height:                           1.4;
-@base-h6-font-size:                             @global-small-font-size;
-@base-h6-line-height:                           1.4;
+@base-h1-font-size-m:                           @global-2xlarge-font-size;          //Desktop h1 tag font size
+@base-h1-font-size:                             @base-h1-font-size-m * 0.85;        //Mobile h1 tag font size
+@base-h1-line-height-m:                         1.4;                                //Desktop h1 line height
+@base-h1-line-height:                           1.2;                                //Mobile h1 line height
+@base-h2-font-size-m:                           @global-xlarge-font-size;           //Desktop h2 tag font size
+@base-h2-font-size:                             @base-h2-font-size-m * 0.85;        //Mobile h2 tag font size
+@base-h2-line-height-m:                         1.4;                                //Desktop h2 tag line height
+@base-h2-line-height:                           1.3;                                //Mobile h2 tag line height
+@base-h3-font-size-m:                           @global-large-font-size * 1.1;      //Desktop h3 tag font size
+@base-h3-font-size:                             @global-large-font-size;            //Mobile h3 tag font size
+@base-h3-line-height-m:                         1.4;                                //Desktop h3 tag line height
+@base-h3-line-height:                           1.4;                                //Mobile h3 tag line height
+@base-h4-font-size-m:                           @global-medium-font-size;           //Desktop h4 tag font size
+@base-h4-font-size:                             @global-medium-font-size;           //Mobile h4 tag font size
+@base-h4-line-height-m:                         1.4;                                //Desktop h4 tag line height
+@base-h4-line-height:                           1.4;                                //Mobile h4 tag line height
+@base-h5-font-size-m:                           @global-font-size;                  //Desktop h5 tag font size                        
+@base-h5-font-size:                             @global-font-size;                  //Mobile h5 tag font size
+@base-h5-line-height-m:                         1.4;                                //Desktop h5 tag line height
+@base-h5-line-height:                           1.4;                                //Mobile h5 tag line height
+@base-h6-font-size-m:                           @global-small-font-size;            //Desktop h6 tag font size
+@base-h6-font-size:                             @global-small-font-size;            //Mobile h6 tag font size
+@base-h6-line-height-m:                         1.4;                                //Desktop h6 tag line height
+@base-h6-line-height:                           1.4;                                //Mobile h6 tag line height                           
 
 @base-list-padding-left:                        30px;
 
@@ -127,17 +137,44 @@
 
 .hook-base-heading() {}
 
-.hook-base-h1() {}
+.hook-base-h1() {
+    @media(min-width: @breakpoint-medium){
+        line-height: @base-h1-line-height-m;
+    }
+}
 
-.hook-base-h2() {}
+.hook-base-h2() {
+    @media(min-width: @breakpoint-medium){
+        line-height: @base-h2-line-height-m;
+    }
+}
 
-.hook-base-h3() {}
+.hook-base-h3() {
+    @media(min-width: @breakpoint-medium){
+        line-height: @base-h3-line-height-m;
+    }
+}
 
-.hook-base-h4() {}
+.hook-base-h4() {
+    @media(min-width: @breakpoint-medium){
+        font-size: @base-h4-font-size-m;
+        line-height: @base-h4-line-height-m;
+    }
+}
 
-.hook-base-h5() {}
+.hook-base-h5() {
+    @media(min-width: @breakpoint-medium){
+        font-size: @base-h5-font-size-m;
+        line-height: @base-h5-line-height-m;
+    }
+}
 
-.hook-base-h6() {}
+.hook-base-h6() {
+    @media(min-width: @breakpoint-medium){
+        font-size: @base-h6-font-size-m;
+        line-height: @base-h6-line-height-m;
+    }
+}
 
 
 // Horizontal rules
