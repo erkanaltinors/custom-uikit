@@ -1,7 +1,7 @@
 # custom-uikit
 UIKit customizable theme.
 
-Special thanks to my friend [Barış](https://github.com/bariskrdrl).
+Special thanks to my friend [Barış](https://github.com/bariskrdrl){:target="_blank"}.
 
 This repo cloned from [Barış's custom uikit theme repo](https://github.com/bariskrdrl/uikit-custom-theme)
 
