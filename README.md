@@ -1,6 +1,6 @@
 # custom-uikit
-UIKit customizable theme. Special thanks to my friend Barış.
-This repo cloned from `https://github.com/bariskrdrl/uikit-custom-theme`
+UIKit customizable theme. Special thanks to my friend Barış.\
+This repo cloned from [Barış's custom uikit theme repo](https://github.com/bariskrdrl/uikit-custom-theme)
 
 
 [![uikit banner](https://cloud.githubusercontent.com/assets/321047/21769911/474d7d9e-d681-11e6-9fe0-d95f8ccfd3a9.jpg)](http://getuikit.com/)
